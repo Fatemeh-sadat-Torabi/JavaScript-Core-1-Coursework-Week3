@@ -16,7 +16,6 @@ and if the user doesn't select a country code, it will return +44 as default.
 for example +447368970764 is user phone number in UK.
 Note: arguments of this function are string!
 */
-
 function userPhoneNumber(countryCode, phoneNumber) {
   let UKdefaultCode = "+44";
   if (countryCode) {
@@ -24,7 +23,7 @@ function userPhoneNumber(countryCode, phoneNumber) {
   }
   return UKdefaultCode + phoneNumber;
 }
-console.log(userPhoneNumber("", "7389345623"));
+
 /*
 write a function that take an input and returns truthy or falsy!
 */
@@ -44,7 +43,34 @@ function printHisPet(hisPet){
     return hisPet
   }
 }
+
+
+
+
+
+
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 
+test("Check for Truthy or Falsy", () => {
+  expect(isTruthyOrFalsy("")).toEqual(" is falsy!");
+});
+test("Check for Truthy or Falsy", () => {
+  expect(isTruthyOrFalsy("red")).toEqual("red is truthy!");
+});
+test("Check for colour", () => {
+    expect(applyColor("Red")).toEqual("Red")
+});
+test("Check for colour", () => {
+    expect(applyColor("")).toEqual("purple")
+});
+test("Check for Country code and phone number" , () => {
+    expect(userPhoneNumber("+91","7767006880")).toEqual("+917767006880");
+});
+test("Check for Country code and phone number" , () => {
+    expect(userPhoneNumber("","7767006880")).toEqual("+447767006880");
+});
+test("Check for his pet", () => {
+    expect(printHisPet("Dog")).toEqual("Dog");
+});
 
