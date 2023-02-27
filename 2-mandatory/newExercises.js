@@ -37,7 +37,7 @@ function isTruthyOrFalsy(input) {
 
 /*
 Complete pet function as below,
-first check if he has a pet and his pet isn't a cat then print his pet!
+first check if he has a pet? then check if his pet isn't a cat then print his pet!
 */ 
 function printHisPet(hisPet){
   if (hisPet && hisPet !== "Cat"){
@@ -46,9 +46,5 @@ function printHisPet(hisPet){
 }
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-// test(" isTruthyOrFalsy function returns in case of '1' ", () => {
-//   expect(isTruthyOrFalsy("1")).toEqual("1 is truthy!");
-// });
-// test(" isTruthyOrFalsy function returns in case of empty string ", () => {
-//   expect(isTruthyOrFalsy("")).toEqual("  is falsy!");
-// });
+
+
