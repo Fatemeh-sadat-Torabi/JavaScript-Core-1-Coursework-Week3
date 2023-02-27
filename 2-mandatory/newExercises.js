@@ -24,7 +24,7 @@ function userPhoneNumber(countryCode, phoneNumber) {
   }
   return UKdefaultCode + phoneNumber;
 }
-console.log(userPhoneNumber("","7389345623"));
+console.log(userPhoneNumber("", "7389345623"));
 /*
 write a function that take an input and returns truthy or falsy!
 */
@@ -35,30 +35,15 @@ function isTruthyOrFalsy(input) {
   return input + " " + "is falsy!";
 }
 
-
 /*
-Complete dailyRoutin function which will show a coder's daily routin as below:
-  code,eat,sleep,trying to understand code I wrote last day!,code,eat,sleep,trying to understand code I wrote last day! ... 
-  show this routin for weekdays. 
-  on Saturday show "I am in weekend now!""
-  use while loop!
-*/
-function dailyRoutin1Week(){
-  let days = 0;
-  while(1 && days !== 5){
-    console.log("code");
-    console.log("eat");
-    console.log("sleep");
-    console.log("trying to understand code I wrote last day!");
-    days+=1;
+Complete pet function as below,
+first check if he has a pet and his pet isn't a cat then print his pet!
+*/ 
+function printHisPet(hisPet){
+  if (hisPet && hisPet !== "Cat"){
+    return hisPet
   }
-  console.log("I am in weekend now!");
 }
-dailyRoutin1Week();
-
-
-
-
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 // test(" isTruthyOrFalsy function returns in case of '1' ", () => {
